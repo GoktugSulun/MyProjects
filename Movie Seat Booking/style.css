@@ -1,0 +1,144 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+:root {
+   --bg-color: #242333;
+   --selected: #6feaf6;
+   --occupied: #ffffff;
+   --seat: #444451;
+   --bg-information: rgba(0, 0, 0, .1);
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   background: var(--bg-color);
+}
+
+/* HEADER */
+section#header {
+   width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+section#header span {
+   color: #fff;
+   margin-right: 10px;
+}
+
+section#header select {
+   padding: 7px 5px;
+   border-radius: 5px;
+   outline: none;
+}
+
+/* INFORMATION */
+section#information {
+   margin-top: 30px;
+   width: 350px;
+}
+
+.seat-inf {
+   color: var(--seat);
+}
+
+section#information div.inform {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background: var(--bg-information);
+   box-sizing: content-box;
+   padding: 12px 5px;
+   border-radius: 10px;
+}
+
+div.inform span {
+   color: var(--seat);
+}
+
+div.inform i {
+   margin-right: 3px;
+   font-size: 15px;
+}
+
+/* NA-SELECT-OCCUPIED*/
+.seat {
+   color: var(--seat);
+}
+
+.selected {
+   color: var(--selected);
+}
+
+.occupied {
+   color: var(--occupied);
+}
+
+/* EXHIBITON */
+section#exhibition {
+   width: 350px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.container {
+   perspective: 1000px;
+}
+
+.cinema {
+   width: 250px;
+   height: 125px;
+   background-color: #ffffff;
+   margin-bottom: 20px;
+   transform: rotateX(-45deg);
+   box-shadow: 0 3px 10px rgba(255, 255, 255, .75);
+}
+
+/* EXHIBITION */
+section#exhibition .row {
+   display: flex;
+}
+
+.row .seat {
+   margin-right: 5px;
+   margin-bottom: 5px;
+}
+
+.seat i {
+   font-size: 20px;
+   transition: all 200ms;
+}
+
+.seat:not(.occupied) i:hover {
+   transform: scale(1.2);
+}
+
+.result {
+   margin-top: 30px;
+   color: var(--occupied);
+}
+
+#amount, #price {
+   color: var(--selected);
+}
+
+/* GAP */
+.row .seat:nth-child(2), .row .seat:nth-child(6) {
+   margin-right: 15px;
+}
+
+
+
+

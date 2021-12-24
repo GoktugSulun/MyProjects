@@ -1,0 +1,67 @@
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+tr td {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+tr td:nth-of-type(3n+1), tr td:nth-of-type(3n+2) {
+  border-right: none;
+}
+
+tr:nth-of-type(2) {
+  border-top: none;
+  border-bottom: none;
+}
+
+#win {
+  background: #dc3545;
+  color: #fff !important;
+  -webkit-animation: ambulance .5s;
+          animation: ambulance .5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ambulance {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ambulance {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

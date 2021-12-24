@@ -1,0 +1,155 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+body {
+   width: 100%;
+   height: 100vh;
+   background: #675AFE;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.wrapper {
+   width: 275px;
+   height: 350px;
+   background: #fff;
+   border-radius: 10px;
+   padding: 25px
+}
+
+.wrapper section.header {
+   width: 100%;
+   height: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30px;
+}
+
+section.header h4 {
+   font-size: 21px;
+}
+
+.wrapper section.body {
+   width: 100%;
+   height: 245px;
+   display: flex;
+   flex-direction: column;
+}
+
+/* AMOUNT PART */
+section.body div.amount-part {
+   width: 100%;
+   height: 75px;
+}
+
+div.amount-part label {
+   font-size: 15px;
+}
+
+div.amount-part input#amount {
+   margin-top: 5px;
+   width: 100%;
+   height: 40px;
+   padding-left: 10px;
+   outline: none;
+   border: 1px solid #dfdfdf;
+   border-radius: 5px;
+   transition: all 200ms;
+}
+
+div.amount-part input#amount:hover, div.amount-part input#amount:focus, .currency:focus, .currency:hover {
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+select#toCurrency option:first-child {
+   color: #999;
+}
+
+/* CHANGE PART */
+section.body div.change-part {
+   margin-top: 5px;
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+}
+
+div.change-part div.change-part-left-side {
+   width: 38%;
+}
+
+div.change-part-left-side label {
+   font-size: 15px;
+}
+
+div.change-part div.icon {
+   width: 24%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25px;
+}
+
+div.change-part div.icon i {
+   transition: all 100ms;
+}
+
+div.change-part div.icon i:hover {
+   transform: scale(.9);
+}
+
+
+.currency{
+   width: 100%;
+   height: 42px;
+   margin-top: 5px;
+   outline: none;
+   border: 1px solid #dfdfdf;
+   padding-left: 5px;
+   border-radius: 5px;
+}
+
+div.change-part div.change-part-right-side {
+   width: 38%;
+}
+
+
+/* RESULT PART */
+section.body div.result-part {
+   font-size: 16px;
+   margin-top: 5px;
+   height: 25px;
+   font-size: 15px;
+}
+
+/* BUTTON PART */
+section.body div.button-part {
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+div.button-part button.btn {
+   width: 100%;
+   height: 40px;
+   background:#675AFE;
+   border: none;
+   outline: none;
+   border-radius: 5px;
+   color: #fff;
+   cursor: pointer;
+   font-size: 17px;
+   transition: all 250ms;
+}
+
+div.button-part button.btn:hover {
+   background:#3121eb;
+}

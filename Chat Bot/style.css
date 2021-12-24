@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .container-fluid {
+  height: 100vh;
+  background: #2c2f33;
+  /* Chat */
+}
+
+* .container-fluid .chat {
+  width: 400px;
+  height: 600px;
+  background: #fff;
+}
+
+* .container-fluid .chat .header {
+  width: 400px;
+  height: 80px;
+  background: #99aab5;
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+}
+
+* .container-fluid .chat .header h4 {
+  color: #23272a;
+}
+
+* .container-fluid .chat .main {
+  width: 400px;
+  height: 440px;
+  background: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* Bot Message Box */
+  /* User Message Box */
+}
+
+* .container-fluid .chat .main .botMessage, * .container-fluid .chat .main .userMessage {
+  width: 400px;
+  padding: 10px 30px 10px 10px;
+}
+
+* .container-fluid .chat .main .botMessage .botImg, * .container-fluid .chat .main .userMessage .botImg {
+  margin-bottom: 10px;
+}
+
+* .container-fluid .chat .main .botMessage .botMessageBox, * .container-fluid .chat .main .botMessage .userMessageBox, * .container-fluid .chat .main .userMessage .botMessageBox, * .container-fluid .chat .main .userMessage .userMessageBox {
+  width: 300px;
+  padding: 10px;
+  position: relative;
+}
+
+* .container-fluid .chat .main .botMessage .botMessageBox, * .container-fluid .chat .main .userMessage .botMessageBox {
+  background: #7289DA;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-left: 10px;
+}
+
+* .container-fluid .chat .main .botMessage .userMessageBox, * .container-fluid .chat .main .userMessage .userMessageBox {
+  background: #99aab5;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-right: 10px;
+}
+
+* .container-fluid .chat .footer {
+  width: 400px;
+  height: 80px;
+  background: #99aab5;
+  border-bottom-left-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  padding: 15px;
+}
+
+* .container-fluid .chat .footer .input {
+  width: 330px;
+  padding: 10px 10px;
+  outline: none;
+  color: #23272a;
+}
+
+* .container-fluid .chat .footer i {
+  font-size: 20px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

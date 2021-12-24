@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="Css/bootstrap-icons.css">
+
+    <title> Checkout </title>
+  </head>
+  <body>
+
+   <div class="container-lg container-fluid">
+      <!-- HEADER -->
+      <header id="header" class="mt-5">
+         
+            <div class="row">
+
+               <div class="col-12 d-flex justify-content-center">
+                  <img src="logo.png" width="70" height="70" class="img-fluid" alt="">
+               </div>
+
+               <div class="col-12 mt-4">
+                  <h5 class="fs-2 text-center"> Checkout form </h5>
+               </div>
+
+               <div class="col-12 mt-1">
+                  <p class="text-center text-secondary fs-5">
+                     Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.
+                  </p>
+               </div>
+
+            </div>
+
+      </header>
+
+      <!-- MAIN -->
+      <main>
+
+         <!-- FORM SECTION -->
+         <section id="form" class="mt-5">  
+            <div class="row">
+
+            <!-- CART -->
+            <div class="col-lg-4 col-md-5 order-md-last mb-5">
+               <div class="row mb-3">
+                  <div class="col">
+                     <h5 class="fs-3 text-primary"> Your cart </h5>
+                  </div>
+                  <div class="col d-flex justify-content-end">
+                     <span class="badge fs-5 bg-primary rounded-pill d-flex align-items-center justify-content-center">
+                        3
+                     </span>
+                  </div>
+               </div>
+
+               <ol class="list-group">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Product name</div>
+                      <span class="text-muted">Brief description</span>
+                    </div>
+                    <span class="text-muted"> $12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Second product</div>
+                      <span class="text-muted">Brief description</span>
+                    </div>
+                    <span class="text-muted"> $8 </span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div class="fw-bold">Third item</div>
+                      <span class="text-muted">Brief description</span>
+                    </div>
+                    <span class="text-muted"> $5 </span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start bg-light">
+                     <div class="ms-2 me-auto text-success">
+                       <div class="fw-bold">Promo code</div>
+                       <small>EXAMPLECODE</small>
+                     </div>
+                     <span class="text-success"> -$5 </span>
+                   </li>
+                   <li class="list-group-item d-flex justify-content-between border-bottom rounded-bottom align-items-start">
+                     <div class="ms-2 me-auto">
+                       <div class="">Total (USD) </div>
+                     </div>
+                     <span class="fw-bold"> $20 </span>
+                   </li>
+
+                   <li class="list-group-item d-flex border-top  rounded-2 justify-content-between align-items-start mt-3 p-2">
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Promo code" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-secondary" type="button" id="button-addon2">
+                           Redeem
+                        </button>
+                      </div>
+                   </li>
+                </ol>
+
+            </div>
+
+               <!--FORM -->
+            <div class="col-lg-8 col-md-7">
+
+               <form class="row needs-validation" novalidate>
+                  <!-- Form Col'un içerisindeki Row-Col -->
+                  <div class="row pb-4">
+
+                     <div class="col-12 mb-3">
+                        <h5 class="fs-4"> Billing adress </h5>
+                     </div>
+
+                     <div class="col-6">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Valid first name is required.
+                        </div>
+                     </div>
+
+                     <div class="col-6">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <div class="valid-feedback">
+                           Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                           Valid last name is required.
+                        </div>
+                     </div>
+
+                     <div class="col-12 mt-3">
+                        <label for="validationCustomUsername" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                           <span class="input-group-text" id="inputGroupPrepend">@</span>
+                           <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                           <div class="invalid-feedback">
+                              Your username is required.
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="col-12 mt-3">
+                        <label for="exampleInputEmail1" class="form-label">Email
+                           <span class="text-secondary"> (Optional)</span>
+                        </label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@example.com">
+                     </div>
+
+                     <div class="col-12 mt-3">
+                        <label for="validationCustom003" class="form-label">
+                           Address
+                        </label>
+                        <input type="text" class="form-control" id="validationCustom003" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                           Please enter your shipping address.
+                        </div>
+                     </div>
+
+                     <div class="col-12 mt-3">
+                        <label for="validationCustom004" class="form-label">
+                           Address 2
+                           <span class="text-secondary"> 
+                              (Optional)
+                           </span>
+                        </label>
+                        <input type="text" class="form-control" id="validationCustom004" placeholder="Apartment or suite">
+                     </div>
+
+                     <div class="col-md-6 mt-3">
+                        <label for="validationCustom005" class="form-label">Country</label>
+                        <select class="form-select" id="validationCustom005" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>United States</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                     </div>
+
+                     <div class="col-md-3 mt-3">
+                        <label for="validationCustom006" class="form-label">State</label>
+                        <select class="form-select" id="validationCustom006" required>
+                          <option selected disabled value="">Choose...</option>
+                          <option>California</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                     </div>
+
+                     <div class="col-md-3 mt-3">
+                        <label for="validationCustom007" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom007" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
+                     </div>
+
+                  </div>
+                  
+                  <hr>
+
+                  <div class="row mt-1 mb-3">
+
+                     <div class="col-12">
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="validationFormCheck1">
+                           <label class="form-check-label" for="validationFormCheck1">Shipping address is the same as my billing address</label>
+                        </div>
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="validationFormCheck2">
+                           <label class="form-check-label" for="validationFormCheck2">Check this checkbox</label>
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <hr>
+
+                  <div class="row">
+                     <div class="col-12">
+                        <h5 class="fs-4 mt-2 mb-3"> Payment </h5>
+                        <div class="form-check">
+                           <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" checked>
+                           <label class="form-check-label" for="validationFormCheck3">Credit card</label>
+                        </div>
+                        <div class="form-check">
+                           <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked">
+                           <label class="form-check-label" for="validationFormCheck4">Debit card</label>
+                        </div>
+                        <div class="form-check">
+                           <input type="radio" class="form-check-input" id="validationFormCheck5" name="radio-stacked">
+                           <label class="form-check-label" for="validationFormCheck5">PayPal</label>
+                        </div>
+                        
+                     </div>
+                  </div>
+
+                  <div class="row pb-4">
+                     <div class="col-md-6 mt-3">
+                        <label for="validationCustom03" class="form-label">Name on Card</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <small class="text-muted fs-6">
+                           Full name as displayed on card
+                        </small>
+                        <div class="invalid-feedback">
+                           Name on card is required
+                        </div>
+                     </div>
+
+                     <div class="col-md-6 mt-3">
+                        <label for="validationCustom04" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="validationCustom04" required>
+                        <div class="invalid-feedback">
+                           Credit card number is required
+                        </div>
+                     </div>
+
+                     <div class="col-md-3 mt-3">
+                        <label for="validationCustom05" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                           Expiration date required
+                        </div>
+                     </div>
+
+                     <div class="col-md-3 mt-3 mb-2">
+                        <label for="validationCustom06" class="form-label">Cvv</label>
+                        <input type="text" class="form-control" id="validationCustom06" required>
+                        <div class="invalid-feedback">
+                           Security code required
+                        </div>
+                     </div>
+
+                  </div>
+
+                  <hr>
+
+                  <div class="row mt-2">
+                     <div class="col-12">
+                        <button class="btn btn-primary w-100 py-2" type="submit"> Continue to checkout </button>
+                      </div>
+                  </div>
+                  
+               </form>
+            </div>
+
+
+               
+            
+            </div>
+         </section>
+
+
+      </main>
+
+      <footer id="footer" class="mt-5 pt-5">
+
+         <div class="row pb-5">
+
+            <div class="col-12 text-center text-muted">
+               &copy; 2017-2021 Company Name
+            </div>
+
+            <div class="col-12 text-center mt-2">
+               <a href="#" class="link-primary me-2">Privacy</a>
+               <a href="#" class="link-primary me-2">Terms</a>
+               <a href="#" class="link-primary">Support</a>
+            </div>
+
+         </div>
+
+      </footer>
+
+
+
+
+
+
+   </div>
+
+   <script src="main.js"></script>
+   
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  </body>
+</html>

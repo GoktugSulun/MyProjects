@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Check Internet Connection </title>
+   <style>
+      body {
+         width: auto;
+         height: 100vh;
+         display: flex;
+         overflow: hidden;
+         justify-content: center;
+         align-items: center;
+         background: rgb(173, 143, 204);
+      }
+
+      .box {
+         width: 400px;
+         height: 400px;
+         background: rgb(112, 112, 196);
+         border-radius: 15px;
+         display: flex;
+         overflow: hidden;
+         justify-content: center;
+         align-items: center;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+
+      p {
+         font-size: 4rem;
+         font-family: sans-serif;
+         color: #fff;
+      }
+   </style>
+</head>
+<body>
+   
+   <div class="box">
+      <p class="status"></p>
+   </div>
+   
+
+   <script>
+      const status = document.querySelector('.status');
+      if(window.navigator.onLine){
+         status.innerHTML = "Internet var"
+      }else {
+         status.innerHTML = "Internet yok"
+      }
+   </script>
+</body>
+</html>

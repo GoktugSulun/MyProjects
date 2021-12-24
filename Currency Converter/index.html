@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Currency Converter </title>
+   <link rel="stylesheet" href="style.css">
+
+   <!-- FONTAWESOME -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+
+   <div class="wrapper">
+      <!-- HEADER -->
+      <section class="header">
+         <h4> Currency Converter </h4>
+      </section>
+
+      <!-- BODY -->
+      <section class="body">
+
+         <div class="amount-part">
+            <label for="amount"> Enter Amount </label>
+            <input type="text" name="amount" id="amount" placeholder="Example: 100">
+         </div>
+
+         <div class="change-part">
+            <div class="change-part-left-side">
+               <label for="fromCurrency"> From </label>
+               <select class="currency" id="fromCurrency" name="cars">
+                  <option value="USD"> USD </option>
+               </select>
+            </div>
+            <div class="icon">
+               <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="change-part-right-side">
+               <label for="toCurrency"> To </label>
+               <select class="currency" id="toCurrency" name="cars">
+                  <option value=""> Choose </option>
+               </select>
+            </div>
+         </div>
+
+         <div class="result-part">
+            <span class="result-from"> 1 USD </span>
+            <span> = </span>
+            <span class="result-to">  </span>
+         </div>
+
+         <div class="button-part">
+            <button class="btn"> Get Exhange Rate </button>
+         </div>
+
+      </section>
+   </div>
+
+
+   <!-- production version, optimized for size and speed -->
+   <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+   <script src="script.js"></script>
+</body>
+</html>

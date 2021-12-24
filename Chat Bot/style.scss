@@ -1,0 +1,98 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   .container-fluid {
+      height: 100vh;
+      background: #2c2f33;
+   
+      /* Chat */
+      .chat {
+         width: 400px;
+         height: 600px;
+         background: #fff;
+   
+         .header {
+            width: 400px;
+            height: 80px;
+            background: #99aab5;
+            border-top-left-radius: .3rem;
+            border-top-right-radius: .3rem;
+   
+            h4 {
+               color: #23272a;
+            }
+         }
+   
+         .main {
+            width: 400px;
+            height: 440px;
+            background: #fff;
+            overflow-y: scroll;
+            overflow-x: hidden;
+
+            /* Bot Message Box */
+            .botMessage, .userMessage {
+               width: 400px;
+               padding: 10px 30px 10px 10px;
+
+               .botImg {
+                  margin-bottom: 10px;
+               }
+               
+               .botMessageBox, .userMessageBox {
+                  width: 300px;
+                  padding: 10px;
+                  position: relative;
+               }
+
+               .botMessageBox {
+                  background: #7289DA;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                  border-bottom-right-radius: 15px;
+                  margin-left: 10px;
+               }
+
+               .userMessageBox {
+                  background: #99aab5;
+                  border-top-left-radius: 15px;
+                  border-top-right-radius: 15px;
+                  border-bottom-left-radius: 15px;
+                  margin-right: 10px;
+               }
+            }
+
+            /* User Message Box */
+         }
+   
+         .footer {
+            width: 400px;
+            height: 80px;
+            background: #99aab5;
+            border-bottom-left-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+            padding: 15px;
+   
+            .input {
+               width: 330px;
+               padding: 10px 10px;
+               outline: none;
+               color: #23272a;
+            }
+
+            i {
+               font-size: 20px;
+               color: #fff;
+            }
+         }
+   
+      }
+   
+   
+   }
+}
+
+
+

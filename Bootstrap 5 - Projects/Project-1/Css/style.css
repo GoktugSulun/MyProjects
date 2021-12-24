@@ -1,0 +1,12 @@
+header#header ul a:hover, #footer a:hover {
+   text-decoration: underline !important;
+}
+
+.effectBtn:hover {
+   background: #6c757d !important;
+}
+
+.effectBtn:hover span {
+   color: #fff;
+}
+

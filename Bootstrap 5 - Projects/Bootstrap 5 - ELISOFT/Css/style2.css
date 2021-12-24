@@ -1,0 +1,69 @@
+/* BACKGROUND IMAGE */
+.generic {
+    background-image: linear-gradient(rgba(0,0,0, .9),
+        rgba(0,0,0, .9)), url("../img/main_bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section#latest img, div.collapse img {
+    min-height: 100%;
+    width: 100%;
+}
+
+section#latest button, section#team .col {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+section#latest .latest-item {
+    position: relative;
+}
+
+section#latest .latest-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(189,61,75,1);
+    opacity: .5;
+    transition: all 250ms;
+}
+
+section#latest .latest-item .overlay:hover {
+    opacity: 1;
+    background: rgba(189,61,75,.9);
+}
+
+section#latest .latest-item .overlay i {
+    opacity: 0;
+    transition: all 250ms;
+}
+
+section#latest .latest-item .overlay:hover i {
+    opacity: 1;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.cancel {
+    position: relative;
+}
+
+.btn-cancel {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
+

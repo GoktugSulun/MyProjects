@@ -1,0 +1,43 @@
+body {
+   width: 100vw;
+   height: 100vh;
+}
+
+tr {
+   display: flex;
+}
+
+tr td {
+   width: 100px;
+   height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+// tr td:nth-of-type(3n+2) {
+//    border-left: none;
+//    border-right: none;
+// }
+
+tr td:nth-of-type(3n+1), tr td:nth-of-type(3n+2) {
+   border-right: none;
+}
+
+tr:nth-of-type(2){
+   border-top: none;
+   border-bottom: none;
+}
+
+#win {
+   background: #dc3545;
+   color: #fff !important;
+   animation: ambulance .5s;
+   animation-iteration-count: infinite;
+}
+
+@keyframes ambulance {
+   0%{opacity:1;}
+   50%{opacity:0;}
+   100%{opacity:1;}
+}
